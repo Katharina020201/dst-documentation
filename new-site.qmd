@@ -21,6 +21,10 @@ The meta-analysis five important environmental impact indicators:
 
 -> interesting for the Data-Storytelling: Land Use, Freshwater Use & GHG emissions
 
+Stress-weighted WF is the volume of blue water multiplied by a water-stress index. Its main application related to water use is the potential to contribute to water scarcity and thereby limit the availability of freshwater for human uses and for the environment.
+
+
+
 ### Working with the data
 Starting point - overview over the overall impact of food on the climate
 

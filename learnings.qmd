@@ -1,0 +1,33 @@
+# Learnings
+
+## Coding and Coding Environment 
+
+Prior to this course, I had very minimal coding experience. Now I have a better understanding of programming with python and setting up a coding environment and handeling it. 
+
+I learned following tools and topics: 
+
+- how to set up an virtual environment
+- basics of (Power Shell) commands/ terminal
+- python basics 
+- jupyter notebook
+- anaconda as a package management tool
+- quarto 
+- streamlit 
+- the python libraries altair and pandas
+- sassy css (scss)
+- yml
+
+
+
+## Data Literacy
+
+Because my Data Literacy course from semester 1 and 2 was a while ago, I refreshed my knowledge of Data Science. 
+
+- Qualitative vs. quantitative variables 
+- 
+
+
+
+## Data Storytelling (Cole Nussbaumer Knaflic)
+
+

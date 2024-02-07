@@ -2,16 +2,16 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Template",
+    "title": "Dokumentation",
     "section": "",
-    "text": "Preface\nThis is a Quarto book template.\n\nTo learn more about Quarto books visit https://quarto.org/docs/books. To change the style of the book take a look at the HTML Themes"
+    "text": "Preface\nWelcome! This is my project documentation for the Data Storytelling course in the winter semester of 2023/2024."
   },
   {
     "objectID": "intro.html",
     "href": "intro.html",
-    "title": "1  Introduction",
+    "title": "1  Introduction to Urban Butcher and",
     "section": "",
-    "text": "This is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
+    "text": "2 Persona"
   },
   {
     "objectID": "summary.html",
@@ -26,5 +26,110 @@
     "title": "References",
     "section": "",
     "text": "Knuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
+  },
+  {
+    "objectID": "new-site.html",
+    "href": "new-site.html",
+    "title": "2  Data Exploration & first visualization ideas",
+    "section": "",
+    "text": "3 First Step: Exploring the data"
+  },
+  {
+    "objectID": "new-site.html#reducing-foods-environmental-impacts-through-producers-and-consumers---poore-nemecek-2018",
+    "href": "new-site.html#reducing-foods-environmental-impacts-through-producers-and-consumers---poore-nemecek-2018",
+    "title": "2  Data Exploration & first visualization ideas",
+    "section": "3.1 Reducing food’s environmental impacts through producers and consumers - Poore & Nemecek, 2018",
+    "text": "3.1 Reducing food’s environmental impacts through producers and consumers - Poore & Nemecek, 2018\n\n3.1.1 Dataset Info\nPoore, J.; Nemecek, T. (2018). Reducing food’s environmental impacts through producers and consumers. Science, 360(6392), 987–992. doi:10.1126/science.aaq0216\nLink: https://www.science.org/doi/10.1126/science.aaq0216\nThis dataset covers data from approx. 38,700 commercially viable farms in 119 countries and 40 products representing ~90% of global protein and calorie consumption.\nThe meta-analysis five important environmental impact indicators:\n\nland use\nfreshwater withdrawals weighted by local water scarcity\nGHG (greenhouse gas)\nacidifying\neutrophying emissions (runoff of excess nutrients into thesurrounding environment and waterways, which affect and polluteecosystems - measured in grams of phosphateequivalents (PO₄eq))\n\n-&gt; interesting for the Data-Storytelling: Land Use, Freshwater Use & GHG emissions\nStress-weighted WF is the volume of blue water multiplied by a water-stress index. Its main application related to water use is the potential to contribute to water scarcity and thereby limit the availability of freshwater for human uses and for the environment.\n\n\n3.1.2 Working with the data\nStarting point - overview over the overall impact of food on the climate\n“Today’s food supply chain creates ~13.7 billion metric tons of carbon dioxide equivalents (CO2eq), 26% of anthropogenic (man-made) GHG emissions.”\nPossible visualization: Pie Chart"
+  },
+  {
+    "objectID": "new-site.html#alternative-protein-company-database---good-food-institute",
+    "href": "new-site.html#alternative-protein-company-database---good-food-institute",
+    "title": "2  Data Exploration & first visualization ideas",
+    "section": "3.2 Alternative protein company database - Good Food Institute",
+    "text": "3.2 Alternative protein company database - Good Food Institute\n\n3.2.1 Dataset Info\nLink: https://gfi.org/resource/alternative-protein-company-database/#manufacturers-and-brands\n\n\n3.2.2 Working with the data\nIn the data set, there is “cultivated meat” under the category “protein category”. Maybe filter to only “plant-based”?\nInteresting metrics for the Storyline: - company focus (e.g. meat, dairy alternative) - Country/ region - year founded\nPossible insights: - growth in recent years (e.g. after 2010) - there are a lot of companys providing alternatives - maybe comparing countries? - indicating/ fitering by product type - (There are Logos in the database, could be cool to use?)"
+  },
+  {
+    "objectID": "new-site.html#consumption-of-meat-per-person-in-germany-from-2010-to-2022---bmel",
+    "href": "new-site.html#consumption-of-meat-per-person-in-germany-from-2010-to-2022---bmel",
+    "title": "2  Data Exploration & first visualization ideas",
+    "section": "3.3 Consumption of meat per person in germany from 2010 to 2022 - BMEL",
+    "text": "3.3 Consumption of meat per person in germany from 2010 to 2022 - BMEL"
+  },
+  {
+    "objectID": "new-site.html#dataset-info-2",
+    "href": "new-site.html#dataset-info-2",
+    "title": "2  Data Exploration & first visualization ideas",
+    "section": "3.4 Dataset Info",
+    "text": "3.4 Dataset Info\nLink: https://www.bmel-statistik.de/ernaehrung-fischerei/versorgungsbilanzen/fleisch"
+  },
+  {
+    "objectID": "new-site.html#working-with-the-data-2",
+    "href": "new-site.html#working-with-the-data-2",
+    "title": "2  Data Exploration & first visualization ideas",
+    "section": "3.5 Working with the data",
+    "text": "3.5 Working with the data\nInteresting metric: “Verzehr pro Kopf”"
+  },
+  {
+    "objectID": "intro.html#section",
+    "href": "intro.html#section",
+    "title": "1  Introduction to Urban Butcher and",
+    "section": "2.1 ",
+    "text": "2.1"
+  },
+  {
+    "objectID": "intro.html#big-idea-worksheet",
+    "href": "intro.html#big-idea-worksheet",
+    "title": "1  Introduction to Urban Butcher and",
+    "section": "1.1 Big Idea Worksheet",
+    "text": "1.1 Big Idea Worksheet\nYou can download the full report here."
+  },
+  {
+    "objectID": "intro.html#persona",
+    "href": "intro.html#persona",
+    "title": "1  Urban Butcher",
+    "section": "1.2 Persona",
+    "text": "1.2 Persona\nTo understand my audience - in my case the owner of urban butcher “Alex Menzinger” - I created a persona with the goals, objectives and challenges."
+  },
+  {
+    "objectID": "intro.html#the-big-idea-worksheet",
+    "href": "intro.html#the-big-idea-worksheet",
+    "title": "1  Urban Butcher",
+    "section": "1.1 The Big Idea Worksheet",
+    "text": "1.1 The Big Idea Worksheet\nYou can find the complete pdf-file with the Big Idea Worksheet here."
+  },
+  {
+    "objectID": "intro.html#design",
+    "href": "intro.html#design",
+    "title": "1  Urban Butcher",
+    "section": "1.3 Design",
+    "text": "1.3 Design\nFor the corporate design and logo of Urban Butcher, I imaged what a modern & young, but not that high-end butchery could look like. To communicate my fictional company and use case efficienty, I choose a very literal name and logo, which conveys the subject of the company, the product, a trendy brand “urban” and the location.\nFor the colors, I wanted to make sure to have a green and red tone to compare plant and animal products. To draw attention and hence implement the data storytelling principles, I incorporated the “blue_highlight” color."
+  },
+  {
+    "objectID": "intro.html#corporate-design",
+    "href": "intro.html#corporate-design",
+    "title": "1  Urban Butcher",
+    "section": "1.3 Corporate Design",
+    "text": "1.3 Corporate Design\nFor the corporate design and logo of Urban Butcher, I imaged what a modern & young, but not that high-end butchery could look like. To communicate my fictional company and use case efficienty, I choose a very literal name and logo, which conveys the subject of the company, the product, a trendy brand “urban” and the location.\nFor the colors, I wanted to make sure to have a green and red tone to compare plant and animal products. To draw attention and hence implement the data storytelling principles, I also incorporated the “blue_highlight” color."
+  },
+  {
+    "objectID": "learnings.html#coding-and-coding-environment",
+    "href": "learnings.html#coding-and-coding-environment",
+    "title": "3  Learnings",
+    "section": "3.1 Coding and Coding Environment",
+    "text": "3.1 Coding and Coding Environment\nPrior to this course, I had very minimal coding experience. Now I have a better understanding of programming with python and setting up a coding environment and handeling it.\nI learned following tools and topics:\n\nhow to set up an virtual environment\nbasics of (Power Shell) commands/ terminal\npython basics\njupyter notebook\nanaconda as a package management tool\nquarto\nstreamlit\nthe python libraries altair and pandas\nsassy css (scss)\nyml"
+  },
+  {
+    "objectID": "learnings.html#data-literacy",
+    "href": "learnings.html#data-literacy",
+    "title": "3  Learnings",
+    "section": "3.2 Data Literacy",
+    "text": "3.2 Data Literacy\nBecause my Data Literacy course from semester 1 and 2 was a while ago, I refreshed my knowledge of Data Science.\n\nQualitative vs. quantitative variables"
+  },
+  {
+    "objectID": "learnings.html#data-storytelling-cole-nussbaumer-knaflic",
+    "href": "learnings.html#data-storytelling-cole-nussbaumer-knaflic",
+    "title": "3  Learnings",
+    "section": "3.3 Data Storytelling (Cole Nussbaumer Knaflic)",
+    "text": "3.3 Data Storytelling (Cole Nussbaumer Knaflic)"
   }
 ]

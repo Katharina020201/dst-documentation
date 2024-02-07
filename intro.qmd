@@ -1,5 +1,19 @@
-# Introduction
+# Urban Butcher
 
-This is a book created from markdown and executable code.
+## The Big Idea Worksheet 
 
-See @knuth84 for additional discussion of literate programming.
+You can find the complete pdf-file with the Big Idea Worksheet <a href="pdf/DST_Kleiser_BigIdeaWorksheet_V2.pdf" target="_blank">here</a>.
+
+## Persona
+
+To understand my audience - in my case the owner of urban butcher "Alex Menzinger" - I created a persona with the goals, objectives and challenges. 
+
+![](images/Persona.png){width="100%"}
+
+## Corporate Design 
+
+For the corporate design and logo of Urban Butcher, I imaged what a modern & young, but not that high-end butchery could look like. To communicate my fictional company and use case efficienty, I choose a very literal name and logo, which conveys the subject of the company, the product, a trendy brand "urban" and the location. 
+
+For the colors, I wanted to make sure to have a green and red tone to compare plant and animal products. To draw attention and hence implement the data storytelling principles, I also incorporated the "blue_highlight" color. 
+
+![](images/design.png){width="100%"}

@@ -1,0 +1,46 @@
+# Data: Environmental Impact of the Food Industry
+
+## About the Data 
+
+Source: 
+Poore, J.; Nemecek, T. (2018). Reducing food’s environmental impacts through producers and consumers. Science, 360(6392), 987–992. doi:10.1126/science.aaq0216  
+
+Link: https://www.science.org/doi/10.1126/science.aaq0216
+
+This dataset covers data from approx. 38,700 commercially viable farms in 119 countries and 40 products representing ~90% of global protein and calorie consumption.
+
+The meta-analysis contains five important environmental impact indicators:
+- land use
+- freshwater withdrawals weighted by local water scarcity
+- water use
+- GHG (greenhouse gas)
+- acidifying 
+- eutrophying emissions (runoff of excess nutrients into the surrounding environment and waterways, which affect and pollute the ecosystems - measured in grams of phosphateequivalents (PO₄eq))
+
+Stress-weighted water use is the volume of blue water multiplied by a water-stress index. Its main application related to water use is the potential to contribute to water scarcity and thereby limit the availability of freshwater for human uses and for the environment.
+
+-> Interesting for the Data-Story: Land Use, Freshwater Use & GHG emissions
+
+In this study, Poore & Nemecek compared the mentioned environmental impact of different products either by their mass (Volume FU) or Protein (Nutrition NU). 
+
+![](images/volume.png.png){width="80%"}
+
+
+-> Comparing the products per 100g of protein could be an interesting metric, because most people consume meat or other animal products because of their nutritional value. 
+
+
+## Explorative Data analysis 
+
+Because this is a very complex (but well-known) data set I looked for already existing visualizations of the data to get an understanding of possible trends. 
+I found very good visualization ideas on the "Our World in Data" Website. 
+
+See the example visualizations here: <a href="https://ourworldindata.org/environmental-impacts-of-food?country=&insight=differences-carbon-footprint-foods#key-insights-on-the-environmental-impacts-of-food" target="_blank">Our World in Data</a>.
+
+
+## First Visualization ideas
+
+## Implementation in Jupyter Notebooks
+
+## Challenges and Problems faced
+
+## Final Visualizations

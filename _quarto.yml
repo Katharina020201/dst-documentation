@@ -6,21 +6,25 @@ execute:
 
 book:
   page-navigation: true
-  title: "Template"
+  title: "Dokumentation"
   site-url: "https://Katharina020201.github.io/dst-documentation/" # replace ORGNAME and REPONAME
   repo-url: https://github.com/Katharina020201/dst-documentation # replace ORGNAME and REPONAME
   repo-actions: [edit, issue]
   open-graph: true
-  image: "/images/logo.png"
-  favicon: "/images/logo.png"
+  image: "/images/Logo.svg"
+  favicon: "/images/LogoFavicon.svg"
   search:
     type: overlay  
   chapters:
     - index.qmd
     - intro.qmd
-    - summary.qmd
-    - references.qmd
     - new-site.qmd
+    - data.qmd
+      - impact-data.qmd
+      # - meat-comsumption.qmd
+      # - alt-protein.qmd
+    - learnings.qmd
+    - references.qmd
 
 format:
   html:

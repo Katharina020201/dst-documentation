@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Dokumentation - References</title>
+<title>Dokumentation - 2&nbsp; Data Exploration &amp; first visualization ideas</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,26 +20,7 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -49,7 +30,8 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./learnings.html" rel="prev">
+<link href="./learnings.html" rel="next">
+<link href="./intro.html" rel="prev">
 <link href=".//images/LogoFavicon.svg" rel="icon" type="image/svg+xml">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -84,7 +66,7 @@ div.csl-indent {
 }</script>
 
 
-<meta property="og:title" content="Dokumentation - References">
+<meta property="og:title" content="Dokumentation - 2&nbsp; Data Exploration &amp; first visualization ideas">
 <meta property="og:site-name" content="Dokumentation">
 </head>
 
@@ -97,7 +79,7 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./references.html">References</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./new-site.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Data Exploration &amp; first visualization ideas</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -140,7 +122,7 @@ div.csl-indent {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./new-site.html" class="sidebar-item-text sidebar-link">
+  <a href="./new-site.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Data Exploration &amp; first visualization ideas</span></span></a>
   </div>
 </li>
@@ -152,7 +134,7 @@ div.csl-indent {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./references.html" class="sidebar-item-text sidebar-link active">
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">References</span></a>
   </div>
 </li>
@@ -162,14 +144,35 @@ div.csl-indent {
 <div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#first-step-exploring-the-data" id="toc-first-step-exploring-the-data" class="nav-link active" data-scroll-target="#first-step-exploring-the-data"><span class="header-section-number">3</span> First Step: Exploring the data</a>
+  <ul class="collapse">
+  <li><a href="#reducing-foods-environmental-impacts-through-producers-and-consumers---poore-nemecek-2018" id="toc-reducing-foods-environmental-impacts-through-producers-and-consumers---poore-nemecek-2018" class="nav-link" data-scroll-target="#reducing-foods-environmental-impacts-through-producers-and-consumers---poore-nemecek-2018"><span class="header-section-number">3.1</span> Reducing food’s environmental impacts through producers and consumers - Poore &amp; Nemecek, 2018</a>
+  <ul class="collapse">
+  <li><a href="#dataset-info" id="toc-dataset-info" class="nav-link" data-scroll-target="#dataset-info"><span class="header-section-number">3.1.1</span> Dataset Info</a></li>
+  <li><a href="#working-with-the-data" id="toc-working-with-the-data" class="nav-link" data-scroll-target="#working-with-the-data"><span class="header-section-number">3.1.2</span> Working with the data</a></li>
+  </ul></li>
+  <li><a href="#alternative-protein-company-database---good-food-institute" id="toc-alternative-protein-company-database---good-food-institute" class="nav-link" data-scroll-target="#alternative-protein-company-database---good-food-institute"><span class="header-section-number">3.2</span> Alternative protein company database - Good Food Institute</a>
+  <ul class="collapse">
+  <li><a href="#dataset-info-1" id="toc-dataset-info-1" class="nav-link" data-scroll-target="#dataset-info-1"><span class="header-section-number">3.2.1</span> Dataset Info</a></li>
+  <li><a href="#working-with-the-data-1" id="toc-working-with-the-data-1" class="nav-link" data-scroll-target="#working-with-the-data-1"><span class="header-section-number">3.2.2</span> Working with the data</a></li>
+  </ul></li>
+  <li><a href="#consumption-of-meat-per-person-in-germany-from-2010-to-2022---bmel" id="toc-consumption-of-meat-per-person-in-germany-from-2010-to-2022---bmel" class="nav-link" data-scroll-target="#consumption-of-meat-per-person-in-germany-from-2010-to-2022---bmel"><span class="header-section-number">3.3</span> Consumption of meat per person in germany from 2010 to 2022 - BMEL</a></li>
+  <li><a href="#dataset-info-2" id="toc-dataset-info-2" class="nav-link" data-scroll-target="#dataset-info-2"><span class="header-section-number">3.4</span> Dataset Info</a></li>
+  <li><a href="#working-with-the-data-2" id="toc-working-with-the-data-2" class="nav-link" data-scroll-target="#working-with-the-data-2"><span class="header-section-number">3.5</span> Working with the data</a></li>
+  </ul></li>
+  </ul>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/Katharina020201/dst-documentation/edit/main/new-site.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/Katharina020201/dst-documentation/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">References</h1>
+<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Data Exploration &amp; first visualization ideas</span></h1>
 </div>
 
 
@@ -184,11 +187,60 @@ div.csl-indent {
 
 </header>
 
-<div id="refs" role="list" style="display: none">
+<section id="first-step-exploring-the-data" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> First Step: Exploring the data</h1>
+<section id="reducing-foods-environmental-impacts-through-producers-and-consumers---poore-nemecek-2018" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="reducing-foods-environmental-impacts-through-producers-and-consumers---poore-nemecek-2018"><span class="header-section-number">3.1</span> Reducing food’s environmental impacts through producers and consumers - Poore &amp; Nemecek, 2018</h2>
+<section id="dataset-info" class="level3" data-number="3.1.1">
+<h3 data-number="3.1.1" class="anchored" data-anchor-id="dataset-info"><span class="header-section-number">3.1.1</span> Dataset Info</h3>
+<p>Poore, J.; Nemecek, T. (2018). Reducing food’s environmental impacts through producers and consumers. Science, 360(6392), 987–992. doi:10.1126/science.aaq0216</p>
+<p>Link: https://www.science.org/doi/10.1126/science.aaq0216</p>
+<p>This dataset covers data from approx. 38,700 commercially viable farms in 119 countries and 40 products representing ~90% of global protein and calorie consumption.</p>
+<p>The meta-analysis five important environmental impact indicators:</p>
+<ul>
+<li>land use</li>
+<li>freshwater withdrawals weighted by local water scarcity</li>
+<li>GHG (greenhouse gas)</li>
+<li>acidifying</li>
+<li>eutrophying emissions (runoff of excess nutrients into thesurrounding environment and waterways, which affect and polluteecosystems - measured in grams of phosphateequivalents (PO₄eq))</li>
+</ul>
+<p>-&gt; interesting for the Data-Storytelling: Land Use, Freshwater Use &amp; GHG emissions</p>
+<p>Stress-weighted WF is the volume of blue water multiplied by a water-stress index. Its main application related to water use is the potential to contribute to water scarcity and thereby limit the availability of freshwater for human uses and for the environment.</p>
+</section>
+<section id="working-with-the-data" class="level3" data-number="3.1.2">
+<h3 data-number="3.1.2" class="anchored" data-anchor-id="working-with-the-data"><span class="header-section-number">3.1.2</span> Working with the data</h3>
+<p>Starting point - overview over the overall impact of food on the climate</p>
+<p>“Today’s food supply chain creates ~13.7 billion metric tons of carbon dioxide equivalents (CO2eq), 26% of anthropogenic (man-made) GHG emissions.”</p>
+<p>Possible visualization: Pie Chart</p>
+</section>
+</section>
+<section id="alternative-protein-company-database---good-food-institute" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="alternative-protein-company-database---good-food-institute"><span class="header-section-number">3.2</span> Alternative protein company database - Good Food Institute</h2>
+<section id="dataset-info-1" class="level3" data-number="3.2.1">
+<h3 data-number="3.2.1" class="anchored" data-anchor-id="dataset-info-1"><span class="header-section-number">3.2.1</span> Dataset Info</h3>
+<p>Link: https://gfi.org/resource/alternative-protein-company-database/#manufacturers-and-brands</p>
+</section>
+<section id="working-with-the-data-1" class="level3" data-number="3.2.2">
+<h3 data-number="3.2.2" class="anchored" data-anchor-id="working-with-the-data-1"><span class="header-section-number">3.2.2</span> Working with the data</h3>
+<p>In the data set, there is “cultivated meat” under the category “protein category”. Maybe filter to only “plant-based”?</p>
+<p>Interesting metrics for the Storyline: - company focus (e.g.&nbsp;meat, dairy alternative) - Country/ region - year founded</p>
+<p>Possible insights: - growth in recent years (e.g.&nbsp;after 2010) - there are a lot of companys providing alternatives - maybe comparing countries? - indicating/ fitering by product type - (There are Logos in the database, could be cool to use?)</p>
+</section>
+</section>
+<section id="consumption-of-meat-per-person-in-germany-from-2010-to-2022---bmel" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="consumption-of-meat-per-person-in-germany-from-2010-to-2022---bmel"><span class="header-section-number">3.3</span> Consumption of meat per person in germany from 2010 to 2022 - BMEL</h2>
+</section>
+<section id="dataset-info-2" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="dataset-info-2"><span class="header-section-number">3.4</span> Dataset Info</h2>
+<p>Link: https://www.bmel-statistik.de/ernaehrung-fischerei/versorgungsbilanzen/fleisch</p>
+</section>
+<section id="working-with-the-data-2" class="level2" data-number="3.5">
+<h2 data-number="3.5" class="anchored" data-anchor-id="working-with-the-data-2"><span class="header-section-number">3.5</span> Working with the data</h2>
+<p>Interesting metric: “Verzehr pro Kopf”</p>
 
-</div>
 
-
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -541,15 +593,18 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./learnings.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Learnings</span></span>
+      <a href="./intro.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Urban Butcher</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
+      <a href="./learnings.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Learnings</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
   </div>
 </nav>
 </div> <!-- /content -->
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/Katharina020201/dst-documentation/edit/main/references.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/Katharina020201/dst-documentation/issues/new" class="toc-action">Report an issue</a></p></div></div></div></div></footer></body></html>
+</body></html>
