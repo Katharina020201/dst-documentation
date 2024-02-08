@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Dokumentation - 3&nbsp; Learnings</title>
+<title>Dokumentation - Learnings</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,7 +20,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -30,8 +49,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./references.html" rel="next">
-<link href="./new-site.html" rel="prev">
+<link href="./data-story.html" rel="prev">
 <link href=".//images/LogoFavicon.svg" rel="icon" type="image/svg+xml">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -66,9 +84,12 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<meta property="og:title" content="Dokumentation - 3&nbsp; Learnings">
+<meta property="og:title" content="Dokumentation - Learnings">
 <meta property="og:description" content="">
+<meta property="og:image" content="https://Katharina020201.github.io/dst-documentation/images/folders.png">
 <meta property="og:site-name" content="Dokumentation">
+<meta property="og:image:height" content="265">
+<meta property="og:image:width" content="803">
 </head>
 
 <body class="nav-sidebar floating">
@@ -80,7 +101,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./learnings.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Learnings</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./learnings.html">Learnings</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -123,20 +144,32 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./new-site.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Data Exploration &amp; first visualization ideas</span></span></a>
+  <a href="./impact-data.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Environmental Impact</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./meat-consumption.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Meat Consumption</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./alt-protein.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Alt-Protein Companies</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./data-story.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">The Story</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./learnings.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Learnings</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./references.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">References</span></a>
+ <span class="menu-text">Learnings</span></a>
   </div>
 </li>
     </ul>
@@ -149,9 +182,8 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#coding-and-coding-environment" id="toc-coding-and-coding-environment" class="nav-link active" data-scroll-target="#coding-and-coding-environment"><span class="header-section-number">3.1</span> Coding and Coding Environment</a></li>
-  <li><a href="#data-literacy" id="toc-data-literacy" class="nav-link" data-scroll-target="#data-literacy"><span class="header-section-number">3.2</span> Data Literacy</a></li>
-  <li><a href="#data-storytelling-cole-nussbaumer-knaflic" id="toc-data-storytelling-cole-nussbaumer-knaflic" class="nav-link" data-scroll-target="#data-storytelling-cole-nussbaumer-knaflic"><span class="header-section-number">3.3</span> Data Storytelling (Cole Nussbaumer Knaflic)</a></li>
+  <li><a href="#coding-and-coding-environment" id="toc-coding-and-coding-environment" class="nav-link active" data-scroll-target="#coding-and-coding-environment">Coding and Coding Environment</a></li>
+  <li><a href="#data-literacy-data-storytelling" id="toc-data-literacy-data-storytelling" class="nav-link" data-scroll-target="#data-literacy-data-storytelling">Data Literacy &amp; Data Storytelling</a></li>
   </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/Katharina020201/dst-documentation/edit/main/learnings.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/Katharina020201/dst-documentation/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
@@ -160,7 +192,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Learnings</span></h1>
+<h1 class="title">Learnings</h1>
 </div>
 
 
@@ -175,15 +207,15 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="coding-and-coding-environment" class="level2" data-number="3.1">
-<h2 data-number="3.1" class="anchored" data-anchor-id="coding-and-coding-environment"><span class="header-section-number">3.1</span> Coding and Coding Environment</h2>
+<section id="coding-and-coding-environment" class="level2">
+<h2 class="anchored" data-anchor-id="coding-and-coding-environment">Coding and Coding Environment</h2>
 <p>Prior to this course, I had very minimal coding experience. Now I have a better understanding of programming with python and setting up a coding environment and handeling it.</p>
 <p>I learned following tools and topics:</p>
 <ul>
 <li>how to set up an virtual environment</li>
 <li>basics of (Power Shell) commands/ terminal</li>
 <li>python basics</li>
-<li>jupyter notebook</li>
+<li>jupyter notebooks</li>
 <li>anaconda as a package management tool</li>
 <li>quarto</li>
 <li>streamlit</li>
@@ -191,19 +223,28 @@ ul.task-list li input[type="checkbox"] {
 <li>sassy css (scss)</li>
 <li>yml</li>
 </ul>
+<p>While working with jupyter notebooks, I realized how important it is to keep a clean folder structure inside the project. That is why I created a cleaned data and an original data folder inside my code folder. After reading the data files into the notebooks and cleaning them, I saved them inside the cleaned data folder to avoid confusion and to run the notebooks smoothly.</p>
+<p><img src="images/folders.png" class="img-fluid" style="width:60.0%"></p>
 </section>
-<section id="data-literacy" class="level2" data-number="3.2">
-<h2 data-number="3.2" class="anchored" data-anchor-id="data-literacy"><span class="header-section-number">3.2</span> Data Literacy</h2>
-<p>Because my Data Literacy course from semester 1 and 2 was a while ago, I refreshed my knowledge of Data Science.</p>
+<section id="data-literacy-data-storytelling" class="level2">
+<h2 class="anchored" data-anchor-id="data-literacy-data-storytelling">Data Literacy &amp; Data Storytelling</h2>
+<p>Because my Data Literacy course from semester 1 and 2 was a while ago, I refreshed my knowledge on Data Science/ Statistics.</p>
+<p>I now know helpful websites where you can get inspiration for data visualizations, like <a href="https://www.data-to-viz.com/" target="_blank">From Data to Viz</a>.</p>
+<p>The Data Storytelling Principles <span class="citation" data-cites="knaflic-2015">(<a href="#ref-knaflic-2015" role="doc-biblioref">Knaflic 2015</a>)</span>:</p>
 <ul>
-<li>Qualitative vs.&nbsp;quantitative variables</li>
-<li></li>
+<li>understand the context/ your audience</li>
+<li>choose an effective visual</li>
+<li>eliminate clutter</li>
+<li>focus attention</li>
+<li>tell a story</li>
 </ul>
-</section>
-<section id="data-storytelling-cole-nussbaumer-knaflic" class="level2" data-number="3.3">
-<h2 data-number="3.3" class="anchored" data-anchor-id="data-storytelling-cole-nussbaumer-knaflic"><span class="header-section-number">3.3</span> Data Storytelling (Cole Nussbaumer Knaflic)</h2>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-knaflic-2015" class="csl-entry" role="listitem">
+Knaflic, Cole Nussbaumer. 2015. <em><span class="nocase">Storytelling with Data</span></em>. <a href="https://doi.org/10.1002/9781119055259">https://doi.org/10.1002/9781119055259</a>.
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->
@@ -557,14 +598,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./new-site.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Data Exploration &amp; first visualization ideas</span></span>
+      <a href="./data-story.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">The Story</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./references.html" class="pagination-link">
-        <span class="nav-page-text">References</span> <i class="bi bi-arrow-right-short"></i>
-      </a>
   </div>
 </nav>
 </div> <!-- /content -->

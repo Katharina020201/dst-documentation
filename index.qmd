@@ -1,11 +1,20 @@
 # Preface {.unnumbered}
 
 Welcome!
-This is my project documentation for the Data Storytelling course in the winter semester of 2023/2024. 
+
+This is my project documentation for the Data Storytelling course in the winter semester of 2023/2024. </br>
+In this project, I created a fictional company "Urban Butcher", collected data from public data sets and formed a "Big Idea" for an recommended action based on the data analysis. 
+
+My Big Idea: 
+_In order to remain competitive, improve its environmental footprint and promote a sustainable
+image among customers, Urban Butcher should expand its product range to include plant-based alternatives._
+
+The data visualizations which were used to communicate this Big Idea are realised with the python libraries pandas and altair, presented on quarto and streamlit. 
 
 
 
-![](images/Logo.svg){width="50%"}
+
+
 
 
 

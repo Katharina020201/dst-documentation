@@ -1,4 +1,4 @@
-# Learnings
+# Learnings {.unnumbered}
 
 ## Coding and Coding Environment 
 
@@ -9,7 +9,7 @@ I learned following tools and topics:
 - how to set up an virtual environment
 - basics of (Power Shell) commands/ terminal
 - python basics 
-- jupyter notebook
+- jupyter notebooks
 - anaconda as a package management tool
 - quarto 
 - streamlit 
@@ -17,17 +17,25 @@ I learned following tools and topics:
 - sassy css (scss)
 - yml
 
+While working with jupyter notebooks, I realized how important it is to keep a clean folder structure inside the project. 
+That is why I created a cleaned data and an original data folder inside my code folder. After reading the data files into the notebooks and cleaning them, I saved them inside the cleaned data folder to avoid confusion and to run the notebooks smoothly.
+
+![](images/folders.png){width="60%"}
 
 
-## Data Literacy
+## Data Literacy & Data Storytelling
 
-Because my Data Literacy course from semester 1 and 2 was a while ago, I refreshed my knowledge of Data Science. 
+Because my Data Literacy course from semester 1 and 2 was a while ago, I refreshed my knowledge on Data Science/ Statistics. 
 
-- Qualitative vs. quantitative variables 
-- 
+I now know helpful websites where you can get inspiration for data visualizations, like <a href="https://www.data-to-viz.com/" target="_blank">From Data to Viz</a>.
 
+The Data Storytelling Principles [@knaflic-2015]:
 
+- understand the context/ your audience
+- choose an effective visual 
+- eliminate clutter
+- focus attention 
+- tell a story
 
-## Data Storytelling (Cole Nussbaumer Knaflic)
 
 

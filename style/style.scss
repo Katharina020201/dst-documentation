@@ -4,6 +4,17 @@
 
 $font-family: "Atkinson Hyperlegible", sans-serif;
 
-/*-- scss:rules --*/
+// Base document colors
+$body-bg: white;
+$body-color: black;
+$link-color: #6B68F9;
 
+$light: #525252;
 
+// Navigation element colors
+$footer-bg: #9698B4;
+$navbar-bg: #F1F1FF;
+$sidebar-bg: #F1F1FF;
+
+// Code blocks
+$code-block-bg-alpha: -.8;

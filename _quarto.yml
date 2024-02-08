@@ -1,5 +1,6 @@
 project:
-  type: book
+  type: website
+  output-dir: docs
 
 execute:
   freeze: auto
@@ -18,13 +19,11 @@ book:
   chapters:
     - index.qmd
     - intro.qmd
-    - new-site.qmd
-    - data.qmd
-      - impact-data.qmd
-      # - meat-comsumption.qmd
-      # - alt-protein.qmd
+    - impact-data.qmd
+    - meat-consumption.qmd
+    - alt-protein.qmd
+    - data-story.qmd
     - learnings.qmd
-    - references.qmd
 
 format:
   html:
@@ -36,4 +35,4 @@ format:
     code-copy: true
     code-overflow: wrap
 
-bibliography: references.bib
+bibliography: references.bibÖ

@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Dokumentation",
     "section": "",
-    "text": "Preface\nWelcome! This is my project documentation for the Data Storytelling course in the winter semester of 2023/2024."
+    "text": "Preface\nWelcome!\nThis is my project documentation for the Data Storytelling course in the winter semester of 2023/2024.  In this project, I created a fictional company “Urban Butcher”, collected data from public data sets and formed a “Big Idea” for an recommended action based on the data analysis.\nMy Big Idea: In order to remain competitive, improve its environmental footprint and promote a sustainable image among customers, Urban Butcher should expand its product range to include plant-based alternatives.\nThe data visualizations which were used to communicate this Big Idea are realised with the python libraries pandas and altair, presented on quarto and streamlit."
   },
   {
     "objectID": "intro.html",
@@ -114,22 +114,260 @@
   {
     "objectID": "learnings.html#coding-and-coding-environment",
     "href": "learnings.html#coding-and-coding-environment",
-    "title": "3  Learnings",
-    "section": "3.1 Coding and Coding Environment",
-    "text": "3.1 Coding and Coding Environment\nPrior to this course, I had very minimal coding experience. Now I have a better understanding of programming with python and setting up a coding environment and handeling it.\nI learned following tools and topics:\n\nhow to set up an virtual environment\nbasics of (Power Shell) commands/ terminal\npython basics\njupyter notebook\nanaconda as a package management tool\nquarto\nstreamlit\nthe python libraries altair and pandas\nsassy css (scss)\nyml"
+    "title": "Learnings",
+    "section": "Coding and Coding Environment",
+    "text": "Coding and Coding Environment\nPrior to this course, I had very minimal coding experience. Now I have a better understanding of programming with python and setting up a coding environment and handeling it.\nI learned following tools and topics:\n\nhow to set up an virtual environment\nbasics of (Power Shell) commands/ terminal\npython basics\njupyter notebooks\nanaconda as a package management tool\nquarto\nstreamlit\nthe python libraries altair and pandas\nsassy css (scss)\nyml\n\nWhile working with jupyter notebooks, I realized how important it is to keep a clean folder structure inside the project. That is why I created a cleaned data and an original data folder inside my code folder. After reading the data files into the notebooks and cleaning them, I saved them inside the cleaned data folder to avoid confusion and to run the notebooks smoothly."
   },
   {
     "objectID": "learnings.html#data-literacy",
     "href": "learnings.html#data-literacy",
-    "title": "3  Learnings",
-    "section": "3.2 Data Literacy",
-    "text": "3.2 Data Literacy\nBecause my Data Literacy course from semester 1 and 2 was a while ago, I refreshed my knowledge of Data Science.\n\nQualitative vs. quantitative variables"
+    "title": "6  Learnings",
+    "section": "6.2 Data Literacy",
+    "text": "6.2 Data Literacy\nBecause my Data Literacy course from semester 1 and 2 was a while ago, I refreshed my knowledge of Data Science."
   },
   {
     "objectID": "learnings.html#data-storytelling-cole-nussbaumer-knaflic",
     "href": "learnings.html#data-storytelling-cole-nussbaumer-knaflic",
-    "title": "3  Learnings",
-    "section": "3.3 Data Storytelling (Cole Nussbaumer Knaflic)",
-    "text": "3.3 Data Storytelling (Cole Nussbaumer Knaflic)"
+    "title": "6  Learnings",
+    "section": "6.3 Data Storytelling (Cole Nussbaumer Knaflic)",
+    "text": "6.3 Data Storytelling (Cole Nussbaumer Knaflic)"
+  },
+  {
+    "objectID": "impact-data.html#about-the-data",
+    "href": "impact-data.html#about-the-data",
+    "title": "2  Environmental Impact",
+    "section": "2.1 About the Data",
+    "text": "2.1 About the Data\nThis dataset covers data from approx. 38,700 commercially viable farms in 119 countries and 40 products, representing ~90% of global protein and calorie consumption.\nThe meta-analysis contains six important environmental impact indicators:\n\nland use\nfreshwater withdrawals weighted by local water scarcity\nwater use\nGHG (greenhouse gas)\nacidifying\neutrophying emissions (runoff of excess nutrients into the surrounding environment and waterways, which affect and pollute the ecosystems - measured in grams of phosphate equivalents, PO₄eq)\n\nStress-weighted water use is the volume of blue water multiplied by a water-stress index. Its main application related to water use is the potential to contribute to water scarcity and thereby limit the availability of freshwater for human uses and for the environment.\n→ Interesting for the Data-Story: Land Use, Freshwater Use & GHG emissions\n\nIn this study from 2018, Poore & Nemecek compared the mentioned environmental impact of different products based on either the mass of the product (Volume FU) or protein contained (Nutrition NU).\n→ Comparing the products per 100g of protein could be an interesting metric, because most people consume meat or other animal products because of their nutritional value."
+  },
+  {
+    "objectID": "impact-data.html#explorative-data-analysis",
+    "href": "impact-data.html#explorative-data-analysis",
+    "title": "2  Environmental Impact",
+    "section": "2.2 Explorative Data Analysis",
+    "text": "2.2 Explorative Data Analysis\nBecause this is a very complex (but well-known) data set I looked for already existing visualizations of the data to get an understanding of possible trends. I found very good visualization ideas on the “Our World in Data” Website.\nSee the example visualizations here: Our World in Data"
+  },
+  {
+    "objectID": "impact-data.html#first-visualization-ideas",
+    "href": "impact-data.html#first-visualization-ideas",
+    "title": "2  Environmental Impact",
+    "section": "2.3 First Visualization ideas",
+    "text": "2.3 First Visualization ideas\n\n2.3.1 Pie Chart\n\nUsing this simple pie chart as a starting point, to give an overview over the overall impact of food on the climate.\nQuote from the paper: “Today’s food supply chain creates ~13.7 billion metric tons of carbon dioxide equivalents (CO2eq), 26% of anthropogenic (man-made) GHG emissions.” (Poore and Nemecek 2018)\n\n\n2.3.2 Proportional Area Chart\n\nMy initial idea was to visualize the land use with an proporional area chart.\n\n\n2.3.3 Bar Chart\n\nTo visualize the emissions per 1000 kcal, 1kg and 100g protein per product and highlighting the plant-based products.\n\n\n2.3.4 Ridgeline Chart\n\nTo visualize the distribution of ghg emissions (5th percentile, median,…) per product, I thought a ridgeline plot could be fitting. But because the values where so different (really big values compared to small values) the implementation was very difficult, so I later decided on an easier visualization which conveys the same message (range bar chart)."
+  },
+  {
+    "objectID": "impact-data.html#implementation-in-jupyter-notebooks",
+    "href": "impact-data.html#implementation-in-jupyter-notebooks",
+    "title": "4  Data: Environmental Impact",
+    "section": "4.4 Implementation in Jupyter Notebooks",
+    "text": "4.4 Implementation in Jupyter Notebooks"
+  },
+  {
+    "objectID": "impact-data.html#challenges-and-problems-faced",
+    "href": "impact-data.html#challenges-and-problems-faced",
+    "title": "2  Environmental Impact",
+    "section": "2.5 Challenges and Problems faced",
+    "text": "2.5 Challenges and Problems faced"
+  },
+  {
+    "objectID": "impact-data.html#final-visualizations",
+    "href": "impact-data.html#final-visualizations",
+    "title": "2  Environmental Impact",
+    "section": "2.6 Final Visualizations",
+    "text": "2.6 Final Visualizations\n\n2.6.1 Bar Chart comparing the impact types\n\n\n\n2.6.2 Bar Chart\n\n\n2.6.3 Comparing the emissions of bovine meat protein with tofu protein\n\nFocus the attention on the comparison by playing with the opacity values."
+  },
+  {
+    "objectID": "impact-data.html#final-charts-and-their-implementation-and-challenges",
+    "href": "impact-data.html#final-charts-and-their-implementation-and-challenges",
+    "title": "4  Data: Environmental Impact",
+    "section": "4.4 Final Charts and their implementation and challenges",
+    "text": "4.4 Final Charts and their implementation and challenges"
+  },
+  {
+    "objectID": "impact-data.html#final-charts---implementation-and-challenges",
+    "href": "impact-data.html#final-charts---implementation-and-challenges",
+    "title": "2  Environmental Impact",
+    "section": "2.4 Final Charts - Implementation and Challenges",
+    "text": "2.4 Final Charts - Implementation and Challenges\n\n2.4.1 Pie Chart for Introduction of the Problem\nImplementataion:\n\nCreating a new df with own values out of the study\n\ndf_food = pd.DataFrame({\"Category\": ['non-food', 'food'], \"Percent\": [74, 26], \"Emissions\": ['5,269.2 billion tons CO2eq', '13.7 billion tons CO2eq']})\n\nColors for food and non-```python\nPlotting the pie chart and saving the df\n\nFinal Chart:\n\n\n\n2.4.2 Bar Chart comparing the Impact Types\nImplementation:\n\nCleaning the df, dropping some first and last rows with not relevant information\nDefining an array with the names of the products I want to compare (otherwise there are too much, visualization will be cluttered)\n\nproducts_to_select = ['Rice', 'Potatoes', 'Wheat', 'Soymilk','Tofu', 'Bovine Meat (beef herd)', 'Bovine Meat (dairy herd)', 'Pig Meat', 'Poultry Meat', 'Milk', 'Cheese']\n\ndf_weight = df_weight[df_weight['Product'].isin(products_to_select)]\n\nThe data table was not well structured for my analysis, there where no clear coloumn names\n\n\nWith the help of GitHub Copilot I edited the columns to have a Impact Type Prefix, e.g. Land Use_5th pctl\n\nNow I could select the median of the Impact Types I wanted to display\n\ndf_weight = df_weight[['Product', 'Land Use_Median', 'GHG_Median']]\n\ndf_weight = df_weight.rename(columns={'Land Use_Median': 'Land Use', 'GHG_Median': 'Emissions'})\n\nCreating a new column for the impact type and Product Type\n\ndf_weight2 = df_weight.melt(id_vars=['Product'],\n             value_vars =['Land Use', 'Emissions'],\n             var_name='Impact Type',  #neuer Typ\n             value_name='Impact'\n             )\n\n\n\nanimal_products = ['Bovine Meat (beef herd)', 'Bovine Meat (dairy herd)', 'Pig Meat', 'Poultry Meat', 'Cheese', 'Milk']\n\n# Help from CoPiliot\n# Create a new column 'Product Type' that indicates whether each product is an animal product or a plant product\n\ndf_weight2['Product Type'] = df_weight2['Product'].apply(lambda x: 'Animal Products' if x in animal_products else 'Plants')\n\nCleaned data set:\n\n\n\n\nProduct\nImpact Type\nImpact\nProduct Type\n\n\n\n\nRice\nLand Use\n2.15\nPlants\n\n\nPotatoes\nLand Use\n0.82\nPlants\n\n\nPeas\nLand Use\n6.73\nPlants\n\n\nSoymilk\nLand Use\n0.64\nPlants\n\n\nTofu\nLand Use\n3.41\nPlants\n\n\nOlive Oil\nLand Use\n17.29\nPlants\n\n\nTomatoes\nLand Use\n0.17\nPlants\n\n\nBovine Meat (beef herd)\nLand Use\n170.37\nAnimal Products\n\n\nBovine Meat (dairy herd)\nLand Use\n25.94\nAnimal Products\n\n\nLamb & Mutton\nLand Use\n127.41\nAnimal Products\n\n\nPig Meat\nLand Use\n13.44\nAnimal Products\n\n\n\n\nSaving the data and plotting the bar chart\n\nimpact_chart = alt.Chart(df_weight2).mark_bar().encode(\n    x=alt.X('Impact:Q', scale=alt.Scale(domain=[df_weight2['Impact'].min(), df_weight2['Impact'].max()])).sort('-y').axis(   # - ist descending\n        labelAngle = 0, \n        titleAnchor = 'start'),\n    y=alt.Y('Impact Type:N', title=None).axis(\n        labels = False, \n        titleAnchor = 'end',\n        grid = False),       \n    color='Impact Type:N',\n).facet(\n    row=alt.Row('Product:N', sort=product_order, title=None, header=alt.Header(labelAngle=0, labelAlign= 'left')),\n    spacing = 5,  # Set facet label angle to 45 degrees\n)\nFinal Chart:\n\n\n\n2.4.3 Range Bar Chart for comparing GHG emissions and Protein\nImplementation:\n\nFocus the attention on the comparison by playing with the opacity values.\nFinal Chart:"
+  },
+  {
+    "objectID": "meat-consumption.html#about-the-data",
+    "href": "meat-consumption.html#about-the-data",
+    "title": "3  Meat Consumption",
+    "section": "3.1 About the Data",
+    "text": "3.1 About the Data"
+  },
+  {
+    "objectID": "meat-consumption.html#explorative-data-analysis",
+    "href": "meat-consumption.html#explorative-data-analysis",
+    "title": "3  Meat Consumption",
+    "section": "3.1 Explorative Data Analysis",
+    "text": "3.1 Explorative Data Analysis\nInteresting metric: “Verzehr pro Kopf” - the consumption of meat per person and year. After taking a look at the data and the on the website provided visualizations, it is apparent the the consumption of meat per person falls, which supports my point.\nVisualization on the Website of the BMEL: \n→ I think the choosen bar plot visualization here is not ideal. A line graph where max and min values can be shown via points on the graph could provide a clearer and not so cluttered appearance."
+  },
+  {
+    "objectID": "meat-consumption.html#first-visualization-ideas",
+    "href": "meat-consumption.html#first-visualization-ideas",
+    "title": "3  Meat Consumption",
+    "section": "3.2 First Visualization ideas",
+    "text": "3.2 First Visualization ideas\n\n3.2.1 Line Graph"
+  },
+  {
+    "objectID": "meat-consumption.html#final-charts---implementation-and-challenges",
+    "href": "meat-consumption.html#final-charts---implementation-and-challenges",
+    "title": "3  Meat Consumption",
+    "section": "3.4 Final Charts - Implementation and Challenges",
+    "text": "3.4 Final Charts - Implementation and Challenges"
+  },
+  {
+    "objectID": "meat-consumption.html#challenges-and-problems-faced",
+    "href": "meat-consumption.html#challenges-and-problems-faced",
+    "title": "3  Meat Consumption",
+    "section": "3.5 Challenges and Problems faced",
+    "text": "3.5 Challenges and Problems faced"
+  },
+  {
+    "objectID": "meat-consumption.html#final-visualizations",
+    "href": "meat-consumption.html#final-visualizations",
+    "title": "3  Meat Consumption",
+    "section": "3.6 Final Visualizations",
+    "text": "3.6 Final Visualizations\n\n3.6.1 Comparing the emissions of bovine meat protein with tofu protein"
+  },
+  {
+    "objectID": "alt-protein.html#about-the-data",
+    "href": "alt-protein.html#about-the-data",
+    "title": "4  Alternative Protein Companies",
+    "section": "4.1 About the Data",
+    "text": "4.1 About the Data"
+  },
+  {
+    "objectID": "alt-protein.html#explorative-data-analysis",
+    "href": "alt-protein.html#explorative-data-analysis",
+    "title": "4  Alt-Protein Companies",
+    "section": "4.1 Explorative Data Analysis",
+    "text": "4.1 Explorative Data Analysis\nInteresting metrics in the data set for the storyline:\n\ncompany focus (e.g. meat, dairy alternative)\nCountry/ region\nYear founded\n\nPossible insights:\n\ngrowth in recent years (e.g. after 2010)\nthere are a lot of companys providing alternatives\nmaybe comparing countries?\nindicating/ fitering by product type\n(There are Logos in the database, could be cool to use?)\nthe distribution of companies across the globe\n\nAlso: In the data set, there is “cultivated meat” under the category “protein category”.\n→ filter to only “plant-based”\nLastly, this data set is updated per request. This could be dangerous, because there is no transparent way to see when the data set was updated last and (I am fairly sure) there is no claim to completeness."
+  },
+  {
+    "objectID": "alt-protein.html#first-visualization-ideas",
+    "href": "alt-protein.html#first-visualization-ideas",
+    "title": "4  Alt-Protein Companies",
+    "section": "4.2 First Visualization ideas",
+    "text": "4.2 First Visualization ideas\n\n4.2.1 Map Chart\n\n\n\n4.2.2 Line Chart\n\nIdea: compare the falling meat consumption with the (hopefully) rising emerging alt-protein companies"
+  },
+  {
+    "objectID": "alt-protein.html#final-charts---implementation-and-challenges",
+    "href": "alt-protein.html#final-charts---implementation-and-challenges",
+    "title": "4  Alternative Protein Companies",
+    "section": "4.3 Final Charts - Implementation and Challenges",
+    "text": "4.3 Final Charts - Implementation and Challenges\n\n4.3.1 Map Chart to show distribution\nImplementation:\n\n\n\n\n\n\n4.3.2 Line Chart for Founded Companies per Year\n\n\n4.3.3 Comparison between Meat Consumption and Companies Founded"
+  },
+  {
+    "objectID": "alt-protein.html#challenges-and-problems-faced",
+    "href": "alt-protein.html#challenges-and-problems-faced",
+    "title": "4  Alternative Protein Companies",
+    "section": "4.5 Challenges and Problems faced",
+    "text": "4.5 Challenges and Problems faced"
+  },
+  {
+    "objectID": "alt-protein.html#final-visualizations",
+    "href": "alt-protein.html#final-visualizations",
+    "title": "4  Alternative Protein Companies",
+    "section": "4.6 Final Visualizations",
+    "text": "4.6 Final Visualizations\n\n4.6.1 Comparing the emissions of bovine meat protein with tofu protein"
+  },
+  {
+    "objectID": "data.html#presentation",
+    "href": "data.html#presentation",
+    "title": "2  Story",
+    "section": "2.1 Presentation",
+    "text": "2.1 Presentation\nFor the presentation, I decided to tell a chronological story, because my reommendation is pretty drastical for a buther shop (vegan products in a butchery!). I did not lead with my ending and rather tried to introduce my audience slowly to the topic of sustainablility.\nMy narrative arc for the presentation:"
+  },
+  {
+    "objectID": "data-story.html#presentation",
+    "href": "data-story.html#presentation",
+    "title": "5  The Story",
+    "section": "5.1 Presentation",
+    "text": "5.1 Presentation\nFor the presentation, I decided to tell a chronological story, because my recommendation is pretty drastical for a butcher shop (vegan products in a butchery!). I did not lead with my ending and rather tried to introduce my audience slowly to the topic of sustainablility.\nMy narrative arc for the presentation:"
+  },
+  {
+    "objectID": "learnings.html#data-literacy-data-storytelling",
+    "href": "learnings.html#data-literacy-data-storytelling",
+    "title": "Learnings",
+    "section": "Data Literacy & Data Storytelling",
+    "text": "Data Literacy & Data Storytelling\nBecause my Data Literacy course from semester 1 and 2 was a while ago, I refreshed my knowledge on Data Science/ Statistics.\nI now know helpful websites where you can get inspiration for data visualizations, like From Data to Viz.\nThe Data Storytelling Principles (Knaflic 2015):\n\nunderstand the context/ your audience\nchoose an effective visual\neliminate clutter\nfocus attention\ntell a story\n\n\n\n\n\nKnaflic, Cole Nussbaumer. 2015. Storytelling with Data. https://doi.org/10.1002/9781119055259."
+  },
+  {
+    "objectID": "impact-data.html",
+    "href": "impact-data.html",
+    "title": "2  Environmental Impact",
+    "section": "",
+    "text": "3 Final Charts - Implementation and Challenges"
+  },
+  {
+    "objectID": "impact-data.html#pie-chart-for-introduction-of-the-problem",
+    "href": "impact-data.html#pie-chart-for-introduction-of-the-problem",
+    "title": "2  Environmental Impact",
+    "section": "2.4 Pie Chart for Introduction of the Problem",
+    "text": "2.4 Pie Chart for Introduction of the Problem\nImplementataion:\n\nCreating a new df with own values out of the study\n\ndf_food = pd.DataFrame({\"Category\": ['non-food', 'food'], \"Percent\": [74, 26], \"Emissions\": ['5,269.2 billion tons CO2eq', '13.7 billion tons CO2eq']})\n\nColors for food and non-```python\nPlotting the pie chart and saving the df\n\nFinal Chart:"
+  },
+  {
+    "objectID": "impact-data.html#bar-chart-comparing-the-impact-types",
+    "href": "impact-data.html#bar-chart-comparing-the-impact-types",
+    "title": "2  Environmental Impact",
+    "section": "2.5 Bar Chart comparing the Impact Types",
+    "text": "2.5 Bar Chart comparing the Impact Types\nImplementation:\n\nImporting the sheet “Weight”, cleaning the df, dropping some first and last rows with not relevant information\nDefining an array with the names of the products I want to compare (otherwise there are too much, visualization will be cluttered)\n\nproducts_to_select = ['Rice', 'Potatoes', 'Wheat', 'Soymilk','Tofu', 'Bovine Meat (beef herd)', 'Bovine Meat (dairy herd)', 'Pig Meat', 'Poultry Meat', 'Milk', 'Cheese']\n\ndf_weight = df_weight[df_weight['Product'].isin(products_to_select)]\n\nThe data table was not well structured for my analysis, there where no clear coloumn names\n\n\nWith the help of GitHub Copilot I edited the columns to have a Impact Type Prefix, e.g. Land Use_5th pctl\n\nNow I could select the median of the Impact Types I wanted to display\n\ndf_weight = df_weight[['Product', 'Land Use_Median', 'GHG_Median']]\n\ndf_weight = df_weight.rename(columns={'Land Use_Median': 'Land Use', 'GHG_Median': 'Emissions'})\n\nCreating a new column for the impact type and Product Type\n\ndf_weight2 = df_weight.melt(id_vars=['Product'],\n             value_vars =['Land Use', 'Emissions'],\n             var_name='Impact Type',  #neuer Typ\n             value_name='Impact'\n             )\n\n\n\nanimal_products = ['Bovine Meat (beef herd)', 'Bovine Meat (dairy herd)', 'Pig Meat', 'Poultry Meat', 'Cheese', 'Milk']\n\n# Help from CoPiliot\n# Create a new column 'Product Type' that indicates whether each product is an animal product or a plant product\n\ndf_weight2['Product Type'] = df_weight2['Product'].apply(lambda x: 'Animal Products' if x in animal_products else 'Plants')\n\nCleaned data set:\n\n\n\n\nProduct\nImpact Type\nImpact\nProduct Type\n\n\n\n\nRice\nLand Use\n2.15\nPlants\n\n\nPotatoes\nLand Use\n0.82\nPlants\n\n\nPeas\nLand Use\n6.73\nPlants\n\n\nSoymilk\nLand Use\n0.64\nPlants\n\n\nTofu\nLand Use\n3.41\nPlants\n\n\nOlive Oil\nLand Use\n17.29\nPlants\n\n\nTomatoes\nLand Use\n0.17\nPlants\n\n\nBovine Meat (beef herd)\nLand Use\n170.37\nAnimal Products\n\n\nBovine Meat (dairy herd)\nLand Use\n25.94\nAnimal Products\n\n\nLamb & Mutton\nLand Use\n127.41\nAnimal Products\n\n\nPig Meat\nLand Use\n13.44\nAnimal Products\n\n\n\n\nSaving the data and plotting the bar chart\n\nimpact_chart = alt.Chart(df_weight2).mark_bar().encode(\n    x=alt.X('Impact:Q', scale=alt.Scale(domain=[df_weight2['Impact'].min(), df_weight2['Impact'].max()])).sort('-y').axis(   # - ist descending\n        labelAngle = 0, \n        titleAnchor = 'start'),\n    y=alt.Y('Impact Type:N', title=None).axis(\n        labels = False, \n        titleAnchor = 'end',\n        grid = False),       \n    color='Impact Type:N',\n).facet(\n    row=alt.Row('Product:N', sort=product_order, title=None, header=alt.Header(labelAngle=0, labelAlign= 'left')),\n    spacing = 5,  # Set facet label angle to 45 degrees\n)\nFinal Chart:"
+  },
+  {
+    "objectID": "impact-data.html#range-bar-chart-for-comparing-ghg-emissions-and-protein",
+    "href": "impact-data.html#range-bar-chart-for-comparing-ghg-emissions-and-protein",
+    "title": "2  Environmental Impact",
+    "section": "2.6 Range Bar Chart for comparing GHG emissions and Protein",
+    "text": "2.6 Range Bar Chart for comparing GHG emissions and Protein\nImplementation:\n\nImporting the sheets “Nutritional Units” cleaning the df, dropping some first and last rows with not relevant information\nDefining an array with the names of the products I want to compare\nRepeating step 3 from the weight sheet - restructuring the coloumn names\nDropping all columns after number 7, because I only want to compare the GHG emissions\n\ndf_nu = df_nu.drop(df_nu.columns[7:], axis=1)\n\nHaving now this table with the percentiles of the ghg emissions:\n\n\n\n\n\n\n\n\n\n\n\n\n\nProduct\n5th pctl\n10th pctl\nMean\nMedian\n90th pctl\n95th pctl\n\n\n\n\nWheat & Rye (Bread)\n0.265388\n0.295291\n0.586843\n0.474708\n0.863445\n1.147522\n\n\nMaize (Meal)\n0.145937\n0.161415\n0.375898\n0.260918\n0.510779\n0.778331\n\n\nBarley (Beer)\n0.118\n0.14\n0.236\n0.236\n0.328\n0.354\n\n\nOatmeal\n0.304994\n0.324056\n0.945482\n0.987419\n1.555471\n1.639344\n\n\n\n\nChoosing which products to compare and dropping the rest\nCreating new columns to visualize the animal VS plant products and to compare tofu and bovine meat\n\n#Help from CoPiliot\n# Create a new column 'Product Type' that indicates whether each product is an animal product or a plant product\ndf_nu['Product Type'] = df_nu['Product'].apply(lambda x: 'Animal Products' if x in animal_products else 'Plants')\n\n# Create a new column 'Compare' to later define a scale and change the opacity of all the products that are \"No\" in the compare list\ncompare = ['Bovine Meat (dairy herd)' , 'Tofu']\ndf_nu['Compare'] = df_nu['Product'].apply(lambda x: 'Yes' if x in compare else 'No')\n\n# scale for Product Type Colors\ndf_nu['Product Type'] = df_nu['Product Type'].astype('category')\n\nPRODUCT_TYPE_NU = df_nu['Product Type'].cat.categories.to_list()\n\nproduct_colors = alt.Scale(\n    domain=PRODUCT_TYPE_NU,\n    range=['red', 'green']\n)\n\n# scale for Comparison Opacity\nCOMPARE = df_nu['Compare'].cat.categories.to_list()\n\nproduct_opacity = alt.Scale(\n    domain=COMPARE,\n    range=[0.1, 1]\n)\n\nPlotting the range bar chart and showing median points\n\nbar_nu = alt.Chart(df_nu).mark_bar(cornerRadius=10, height=20).encode(\n    x=alt.X('5th pctl:Q').scale(domain=[0, 140]).title('GHG Emissions (kg CO2eq/kg)'),\n    x2='95th pctl:Q',\n    y=alt.Y('Product:N', title='Product'),\n    color=alt.Color('Product Type:N', scale=product_colors) \n).properties(\n    width=800,\n    height=600\n)\n\n# better use median!!! -&gt; corrected in the quarto presentation\nmean_points = alt.Chart(df_nu).mark_point(filled=False, color='black', size=200).encode(\n  x=alt.X('Mean:Q'),\n  y=alt.Y('Product:N'),\n)\nFinal Chart:\n\nAlso: To focus the attention while comparing meat-protein and tofu-protein, I created a simple vertical line chart at the 5th percentile of bovine meat and gave the products which were not in comparison a lower opacity (see in 7, variable product_opacity).\n\n\n\n\n\nPoore, Joseph, and Thomas Nemecek. 2018. “Reducing food’s environmental impacts through producers and consumers.” Science 360 (6392): 987–92. https://doi.org/10.1126/science.aaq0216."
+  },
+  {
+    "objectID": "impact-data.html#about-the-data-poore-2018",
+    "href": "impact-data.html#about-the-data-poore-2018",
+    "title": "2  Environmental Impact",
+    "section": "2.1 About the Data (Poore and Nemecek 2018)",
+    "text": "2.1 About the Data (Poore and Nemecek 2018)\nThis dataset covers data from approx. 38,700 commercially viable farms in 119 countries and 40 products, representing ~90% of global protein and calorie consumption.\nThe meta-analysis contains six important environmental impact indicators:\n\nland use\nfreshwater withdrawals weighted by local water scarcity\nwater use\nGHG (greenhouse gas)\nacidifying\neutrophying emissions (runoff of excess nutrients into the surrounding environment and waterways, which affect and pollute the ecosystems - measured in grams of phosphate equivalents, PO₄eq)\n\nStress-weighted water use is the volume of blue water multiplied by a water-stress index. Its main application related to water use is the potential to contribute to water scarcity and thereby limit the availability of freshwater for human uses and for the environment.\n→ Interesting for the Data-Story: Land Use, Freshwater Use & GHG emissions\n\nIn this study from 2018, Poore & Nemecek compared the mentioned environmental impact of different products based on either the mass of the product (Volume FU) or protein contained (Nutrition NU).\n→ Comparing the products per 100g of protein could be an interesting metric, because most people consume meat or other animal products because of their nutritional value."
+  },
+  {
+    "objectID": "meat-consumption.html#line-graph-to-show-the-consumption-of-meat-in-germany",
+    "href": "meat-consumption.html#line-graph-to-show-the-consumption-of-meat-in-germany",
+    "title": "3  Meat Consumption",
+    "section": "3.3 Line Graph to show the Consumption of Meat in Germany",
+    "text": "3.3 Line Graph to show the Consumption of Meat in Germany\nImplemention:\n\nImporting the data set from the BMEL, I encountered a problem:\n\n\n# Problem: the years are on different excel sheets\n# get sheet names\nsheet_names = list(df.keys())\n\nOutput:\n['2022',\n '2021',\n '2020',\n '2019',\n '2018',\n '2017',\n '2016',\n '2015',\n '2014',\n '2013',\n '2012',\n '2011',\n '2010',\n 'Dokumentation']\n\nManually, I located where the values I need (consumption per Person) are found in the table layout\nTogether with Copilot, I created a new df where the sheet name is in one column (Year) and the Consumption per Person in the other\n\n# create a new df dictionary without sheet 'Dokumentation'\n\ndfs = pd.read_excel('original-data/versorgungsbilanz-fleisch.xlsx', sheet_name= sheet_names, skiprows=3, skipfooter=8)\n\n\n# initialize empty list for consumption per person\nconsumption = []\n\n# help from Copilot \nfor sheet_names, df in dfs.items():\n    # Extract the value at the first row and first column\n    value = df.iloc[12, 14]\n    # Append the value and the sheet name to the list\n    consumption.append((sheet_names, value))\n\n# Create a new DataFrame from the list\ndf_consumption = pd.DataFrame(consumption, columns=['Year', 'Consumption per Person'])\n\n\n\nYear\nConsumption per Person\n\n\n\n\n2022\n52.186567\n\n\n2021\n56.786586\n\n\n2020\n57.538436\n\n\n2019\n58.998437\n\n\n2018\n61.467405\n\n\n2017\n61.256313\n\n\n\n\nConverting Year to datetime and rounding the consumption per person to 2 decimals\nSaving the df in the cleaned-data folder\nPlotting the basic line chart\n\nline_chart = alt.Chart(df_consumption,\n    title=alt.Title(\n    'Consumption of Meat in Germany falls',\n    subtitle='The per person consumption of meat in Germany has fallen by 8 kg since 2010',\n    subtitleColor= 'grey',\n    )\n).mark_line().encode(\n    x=alt.X('Year:T').axis(\n        title = \"Year\",\n        titleColor = 'grey',\n        titleAnchor='start',\n        labelAngle = 0,\n        grid = False,\n        tickColor= 'grey', \n        format = '%Y'),\n    y= alt.Y('Consumption per Person').scale(domain=(30, 80)).axis(\n        title ='Consumption per Person in kg',\n        titleColor= 'grey',\n        titleAnchor='end', \n        grid = False, \n        tickColor= 'grey', \n    ),\n    strokeWidth = alt.value(2)\n).properties(\n    width = 550,\n    height = 350\n)\n\nTo focus the attention: creating 2 points and a dotted line for the min and max consumption values and an area to visualize the decline of meat consumption\n\n\n\nIn Quarto presentation: To implement the Data Storytelling Principles, I slowly built the chart up (frist sceleton chart, then line graph, first point at max value and label, second point at min point and label, area and label) Element which were not relevant for the current side got a grey color.\n\nFinal Chart(s):"
+  },
+  {
+    "objectID": "alt-protein.html#map-chart-to-show-distribution",
+    "href": "alt-protein.html#map-chart-to-show-distribution",
+    "title": "4  Alt-Protein Companies",
+    "section": "4.3 Map Chart to show distribution",
+    "text": "4.3 Map Chart to show distribution\nImplementation:\n\nGrouping the data set by the Country/ Region column\n\ndf_country = df.groupby('Country/Region').size().reset_index(name='Number of Companies per Country')\n\nHere comes the problem: I do not have the latitude nor longitude inside my dataset. My only indicators are the Country Names. I can not plot my chart as seen in the Altair Documentation of a Choropleth Map, I do not have a cloumn with the iso-3166 code which altair uses to perform the lookup on the geoshape.\nI tried to download a csv file containing the iso codes, to merge with my df, but this did not work properly\nWorkaround: I found a really helful Git Hub repository  Github bast . With the help of this code (which firstly transforms the csv with the iso-codes to the name, and then this name to our value!) I could plot my visualization.\n\n## ----!!! Source:  https://github.com/bast/altair-geographic-plots/blob/main/choropleth.ipynb ---- ##\n\ncountries = alt.topo_feature(data.world_110m.url, \"countries\")\n# https://en.wikipedia.org/wiki/ISO_3166-1_numeric\ncountry_codes = pd.read_csv(\n    \"https://raw.githubusercontent.com/lukes/ISO-3166-Countries-with-Regional-Codes/master/all/all.csv\"\n)\n\nbackground = alt.Chart(countries).mark_geoshape(fill=\"lightgray\")\n\n# we transform twice, first from \"ISO 3166-1 numeric\" to name, then from name to value\nforeground = (\n    alt.Chart(countries)\n    .mark_geoshape()\n    .transform_lookup(\n        lookup=\"id\",\n        from_=alt.LookupData(data=country_codes, key=\"country-code\", fields=[\"name\"]),\n    )\n    .transform_lookup(\n        lookup=\"name\",\n        from_=alt.LookupData(data=df_country, key=\"name\", fields=[\"Number of Companies per Country\"]),\n    )\n    .encode(\n        fill=alt.Color(\n            \"Number of Companies per Country:Q\",\n            scale=alt.Scale(scheme=\"reds\"),\n            title=\"Number of Companies\"\n        ),\n        tooltip=[alt.Tooltip('name:N', title='Country'), alt.Tooltip('Number of Companies per Country:Q', title='Number of Companies')]\n    )\n)\n\nchart = (\n    (background + foreground)\n    .properties(width=700, height=600)\n    .project(\n        type=\"equalEarth\",\n        scale=800,\n        translate=[200,1000],\n    )\n)\n\n\nIn the visualization, I realized some countries were not displayed. This was due to the fact, that some Countries in my df were not cohesive with the names in the csv file. I decided, I will only show a visualization of europe (adjusting the scale and translation) and edit the incorrect names manually.\n\nEuropean countries in df_country affected:\n\nBavaria and Scotland (can be dropped, only one Company in each)\nCzech Republic -&gt; in country_code file: Czechia\nUnited Kingdom -&gt; in country_code file: United Kingdom of Great Britain and Northern Ireland\n\nFinal Chart:"
+  },
+  {
+    "objectID": "alt-protein.html#line-chart-for-founded-companies-per-year",
+    "href": "alt-protein.html#line-chart-for-founded-companies-per-year",
+    "title": "4  Alt-Protein Companies",
+    "section": "4.4 Line Chart for Founded Companies per Year",
+    "text": "4.4 Line Chart for Founded Companies per Year\nImplementation:\n\nCleaning the data, dropping non relevant columns and changing the data types\n\n# dropping not interesting cloumns, e.g. website, founders, ...\n\ndf.drop(['Brief Description', 'Animal-Type Analog', 'State', 'City', 'Website', 'Founders'], axis=1, inplace=True)\n\nLIST_CAT = ['Protein Category','Company Focus','Company type','Technology Focus','Product Type','Ingredient Type','Operating Regions','Country/Region']\n\nfor i in LIST_CAT:\n    df[i] = df[i].astype('category')\n\nCreating a new df with companies specialized on alternative proteins, grouped by Year Founded\n\ndf_founded = df[df['Company type'] == 'Specialized (focused on alternative proteins)'].groupby('Year Founded').size().reset_index(name='Number of Companies Founded')\n\nDecission: I will use the data up until 2021, because it fits better with the meat consumption data & fits better in the storyline\n\ndf_founded = df_founded[(df_founded['Year Founded'] &gt;= 2010) & (df_founded['Year Founded'] &lt;= 2021)]\n\n\n\nYear Founded\nNumber of Companies Founded\n\n\n\n\n2010\n18\n\n\n2011\n19\n\n\n2012\n20\n\n\n2013\n24\n\n\n2014\n27\n\n\n2015\n45\n\n\n2016\n54\n\n\n2017\n66\n\n\n2018\n77\n\n\n2019\n109\n\n\n2020\n105\n\n\n2021\n95\n\n\n\n\nPlotting the line chart\n\n# Convert year founded to datetime\n\ndf_founded['Year Founded'] = pd.to_datetime(df_founded['Year Founded'], format='%Y')\n\n# Plotting line chart\n\nline_chart = alt.Chart(df_founded\n).mark_line().encode(\n    x=alt.X('Year Founded').axis(\n        title = \"Year\",\n        titleColor = 'grey',\n        titleAnchor='start',\n        labelAngle = 0,\n        grid = False,\n        tickColor= 'grey'), \n    y= alt.Y('Number of Companies Founded').axis(\n        title ='Number of Companies Founded',\n        titleColor= 'grey',\n        titleAnchor='end',\n        grid = False, \n        tickColor= 'grey', \n    ),\n    strokeWidth = alt.value(2)\n).properties(\n    width = 550,\n    height = 350\n)\nFinal Chart:"
+  },
+  {
+    "objectID": "alt-protein.html#comparison-between-meat-consumption-and-companies-founded",
+    "href": "alt-protein.html#comparison-between-meat-consumption-and-companies-founded",
+    "title": "4  Alt-Protein Companies",
+    "section": "4.5 Comparison between Meat Consumption and Companies Founded",
+    "text": "4.5 Comparison between Meat Consumption and Companies Founded\nImplementation (in the quarto presentation file):\n\nMerging the dataframes of the meat consumption and alt-protein companies founded\n\ndf_merged = pd.merge(df_consumption, df_founded,\n                     left_on='Year', right_on='Year Founded')\n\nDelete one of the “Year” columns, otherwise it would be double\nUsing the Altair Documentation of a layered chart with dual axis as a reference\n\n# create double axis chart\nbase = alt.Chart(df_merged).encode(\n    x=alt.X('Year:T').axis(\n        title=\"Year\",\n        titleColor='grey',\n        titleAnchor='start',\n        labelAngle=0,\n        grid=False,\n        tickColor='grey',\n        format='%Y'),\n    strokeWidth=alt.value(2)\n).properties(\n    width=750,\n    height=400\n)\n\nline_consumption = base.mark_line(stroke=dark_red).encode(\n    x=alt.X('Year:T').axis(\n        grid=False,\n        titleColor='grey',\n        titleAnchor='start'),\n    y=alt.Y('Consumption per Person:Q').scale(domain=(40, 75)).axis(\n        title='Consumption of Meat per Person in Germany (kg)',\n        titleColor=dark_red,\n        grid=False,\n        titleAnchor='end',\n        titleAngle=270,\n        titleX=50,\n    )\n)\n\nline_founded = base.mark_line(stroke=blue_highlight).encode(\n    x=alt.X('Year:T').axis(\n        grid=False,\n        titleColor='grey',\n        titleAnchor='start'),\n    y=alt.Y('Number of Companies Founded:Q').axis(\n        title='Number of Companies Founded',\n        titleColor=blue_highlight,\n        grid=False,\n        titleAnchor='end'\n    )\n)\n\nNote here: I left out the year 2022, even though there was meat consumption data that year, in both datasets (alt-protein-companies and meat-consumption). Reason for that was the very low Number of Companies founded in the year 2022. My presumtion is, that this is due to the fact that the Good Food Institute Data set is updated on submission. Newer companies were maybe not yet added to the data. Overall, the comparision with another dataset, maybe regarding the consumption of alternative protein products in Germany, would have been a lot more fitting. Sadly, I could not find any open data sets regarding that topic."
+  },
+  {
+    "objectID": "alt-protein.html",
+    "href": "alt-protein.html",
+    "title": "4  Alt-Protein Companies",
+    "section": "",
+    "text": "5 Convert year founded to datetime\ndf_founded[‘Year Founded’] = pd.to_datetime(df_founded[‘Year Founded’], format=‘%Y’)\nFinal Chart:"
+  },
+  {
+    "objectID": "alt-protein.html#comparison-between-meat-consumption-and-alt-companies-founded",
+    "href": "alt-protein.html#comparison-between-meat-consumption-and-alt-companies-founded",
+    "title": "4  Alt-Protein Companies",
+    "section": "4.5 Comparison between Meat Consumption and Alt-Companies Founded",
+    "text": "4.5 Comparison between Meat Consumption and Alt-Companies Founded\nImplementation (in the quarto presentation file):\n\nMerging the dataframes of the meat consumption and alt-protein companies founded\n\ndf_merged = pd.merge(df_consumption, df_founded,\n                     left_on='Year', right_on='Year Founded')\n\nDelete one of the “Year” columns, otherwise it would be double\nUsing the Altair Documentation of a layered chart with dual axis as a reference\n\n# create double axis chart\nbase = alt.Chart(df_merged).encode(\n    x=alt.X('Year:T').axis(\n        title=\"Year\",\n        titleColor='grey',\n        titleAnchor='start',\n        labelAngle=0,\n        grid=False,\n        tickColor='grey',\n        format='%Y'),\n    strokeWidth=alt.value(2)\n).properties(\n    width=750,\n    height=400\n)\n\nline_consumption = base.mark_line(stroke=dark_red).encode(\n    x=alt.X('Year:T').axis(\n        grid=False,\n        titleColor='grey',\n        titleAnchor='start'),\n    y=alt.Y('Consumption per Person:Q').scale(domain=(40, 75)).axis(\n        title='Consumption of Meat per Person in Germany (kg)',\n        titleColor=dark_red,\n        grid=False,\n        titleAnchor='end',\n        titleAngle=270,\n        titleX=50,\n    )\n)\n\nline_founded = base.mark_line(stroke=blue_highlight).encode(\n    x=alt.X('Year:T').axis(\n        grid=False,\n        titleColor='grey',\n        titleAnchor='start'),\n    y=alt.Y('Number of Companies Founded:Q').axis(\n        title='Number of Companies Founded',\n        titleColor=blue_highlight,\n        grid=False,\n        titleAnchor='end'\n    )\n)\n\nNote here: I left out the year 2022, even though there was meat consumption data that year, in both datasets (alt-protein-companies and meat-consumption). Reason for that was the very low Number of Companies founded in the year 2022. My presumtion is, that this is due to the fact that the Good Food Institute Data set is updated on submission. Newer companies were maybe not yet added to the data. Overall, the comparision with another dataset, maybe regarding the consumption of alternative protein products in Germany, would have been a lot more fitting. Sadly, I could not find any open data sets regarding that topic."
   }
 ]
