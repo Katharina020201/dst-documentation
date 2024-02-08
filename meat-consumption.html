@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>index</title>
+<title>meat-consumption</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,6 +19,40 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -83,7 +117,15 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#preface" id="toc-preface" class="nav-link active" data-scroll-target="#preface">Preface</a></li>
+  <li><a href="#meat-consumption" id="toc-meat-consumption" class="nav-link active" data-scroll-target="#meat-consumption">Meat Consumption</a>
+  <ul class="collapse">
+  <li><a href="#explorative-data-analysis" id="toc-explorative-data-analysis" class="nav-link" data-scroll-target="#explorative-data-analysis">Explorative Data Analysis</a></li>
+  <li><a href="#first-visualization-ideas" id="toc-first-visualization-ideas" class="nav-link" data-scroll-target="#first-visualization-ideas">First Visualization ideas</a>
+  <ul class="collapse">
+  <li><a href="#line-graph" id="toc-line-graph" class="nav-link" data-scroll-target="#line-graph">Line Graph</a></li>
+  </ul></li>
+  <li><a href="#line-graph-to-show-the-consumption-of-meat-in-germany" id="toc-line-graph-to-show-the-consumption-of-meat-in-germany" class="nav-link" data-scroll-target="#line-graph-to-show-the-consumption-of-meat-in-germany">Line Graph to show the Consumption of Meat in Germany</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -93,14 +135,151 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<section id="preface" class="level1 unnumbered">
-<h1 class="unnumbered">Preface</h1>
-<p>Welcome!</p>
-<p>This is my project documentation for the Data Storytelling course in the winter semester of 2023/2024. <br> In this project, I created a fictional company “Urban Butcher”, collected data from public data sets and formed a “Big Idea” for an recommended action based on the data analysis.</p>
-<p>My Big Idea: <em>In order to remain competitive, improve its environmental footprint and promote a sustainable image among customers, Urban Butcher should expand its product range to include plant-based alternatives.</em></p>
-<p>The data visualizations which were used to communicate this Big Idea are realised with the python libraries pandas and altair, presented on quarto and streamlit.</p>
+<section id="meat-consumption" class="level1">
+<h1>Meat Consumption</h1>
+<p>Source: Bundesministerium für Ernährung und Landwirtschaft (BMEL)</p>
+<p>The german federal ministry of food and agriculture provides a data set regarding production and consumption of meat in germany, as well as trade data from imports and exports of animals.</p>
+<p>🔗 <a href="https://www.bmel-statistik.de/ernaehrung-fischerei/versorgungsbilanzen/fleisch" target="_blank">To the dataset</a></p>
+<section id="explorative-data-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="explorative-data-analysis">Explorative Data Analysis</h2>
+<p>Interesting metric: “Verzehr pro Kopf” - the consumption of meat per person and year. After taking a look at the data and the on the website provided visualizations, it is apparent the the consumption of meat per person falls, which supports my point.</p>
+<p>Visualization on the Website of the BMEL: <img src="images/bmel-viz.png" class="img-fluid" style="width:60.0%"></p>
+<p>→ I think the choosen bar plot visualization here is not ideal. A line graph where max and min values can be shown via points on the graph could provide a clearer and not so cluttered appearance.</p>
+</section>
+<section id="first-visualization-ideas" class="level2">
+<h2 class="anchored" data-anchor-id="first-visualization-ideas">First Visualization ideas</h2>
+<section id="line-graph" class="level3">
+<h3 class="anchored" data-anchor-id="line-graph">Line Graph</h3>
+<p><img src="images/meat.png" class="img-fluid" style="width:60.0%"></p>
+</section>
+</section>
+<section id="line-graph-to-show-the-consumption-of-meat-in-germany" class="level2">
+<h2 class="anchored" data-anchor-id="line-graph-to-show-the-consumption-of-meat-in-germany">Line Graph to show the Consumption of Meat in Germany</h2>
+<p><strong>Implemention:</strong></p>
+<ol type="1">
+<li>Importing the data set from the BMEL, I encountered a problem:</li>
+</ol>
+<p><img src="images/Excel_Problem.png" class="img-fluid" style="width:100.0%"></p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu"># Problem: the years are on different excel sheets</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu"># get sheet names</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>sheet_names = list(df.keys())</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>Output:</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>['2022',</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a> '2021',</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a> '2020',</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a> '2019',</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a> '2018',</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a> '2017',</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a> '2016',</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a> '2015',</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a> '2014',</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a> '2013',</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a> '2012',</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a> '2011',</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a> '2010',</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a> 'Dokumentation']</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ol start="2" type="1">
+<li><p>Manually, I located where the values I need (consumption per Person) are found in the table layout</p></li>
+<li><p>Together with Copilot, I created a new df where the sheet name is in one column (Year) and the Consumption per Person in the other</p></li>
+</ol>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># create a new df dictionary without sheet 'Dokumentation'</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>dfs <span class="op">=</span> pd.read_excel(<span class="st">'original-data/versorgungsbilanz-fleisch.xlsx'</span>, sheet_name<span class="op">=</span> sheet_names, skiprows<span class="op">=</span><span class="dv">3</span>, skipfooter<span class="op">=</span><span class="dv">8</span>)</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="co"># initialize empty list for consumption per person</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>consumption <span class="op">=</span> []</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="co"># help from Copilot </span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> sheet_names, df <span class="kw">in</span> dfs.items():</span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Extract the value at the first row and first column</span></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>    value <span class="op">=</span> df.iloc[<span class="dv">12</span>, <span class="dv">14</span>]</span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Append the value and the sheet name to the list</span></span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>    consumption.append((sheet_names, value))</span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a new DataFrame from the list</span></span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>df_consumption <span class="op">=</span> pd.DataFrame(consumption, columns<span class="op">=</span>[<span class="st">'Year'</span>, <span class="st">'Consumption per Person'</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Year</th>
+<th>Consumption per Person</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>2022</td>
+<td>52.186567</td>
+</tr>
+<tr class="even">
+<td>2021</td>
+<td>56.786586</td>
+</tr>
+<tr class="odd">
+<td>2020</td>
+<td>57.538436</td>
+</tr>
+<tr class="even">
+<td>2019</td>
+<td>58.998437</td>
+</tr>
+<tr class="odd">
+<td>2018</td>
+<td>61.467405</td>
+</tr>
+<tr class="even">
+<td>2017</td>
+<td>61.256313</td>
+</tr>
+</tbody>
+</table>
+<ol start="4" type="1">
+<li><p>Converting Year to datetime and rounding the consumption per person to 2 decimals</p></li>
+<li><p>Saving the df in the cleaned-data folder</p></li>
+<li><p>Plotting the basic line chart</p></li>
+</ol>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>line_chart <span class="op">=</span> alt.Chart(df_consumption,</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    title<span class="op">=</span>alt.Title(</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    <span class="st">'Consumption of Meat in Germany falls'</span>,</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    subtitle<span class="op">=</span><span class="st">'The per person consumption of meat in Germany has fallen by 8 kg since 2010'</span>,</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>    subtitleColor<span class="op">=</span> <span class="st">'grey'</span>,</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>).mark_line().encode(</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>    x<span class="op">=</span>alt.X(<span class="st">'Year:T'</span>).axis(</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>        title <span class="op">=</span> <span class="st">"Year"</span>,</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>        titleColor <span class="op">=</span> <span class="st">'grey'</span>,</span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>        titleAnchor<span class="op">=</span><span class="st">'start'</span>,</span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>        labelAngle <span class="op">=</span> <span class="dv">0</span>,</span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>        grid <span class="op">=</span> <span class="va">False</span>,</span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>        tickColor<span class="op">=</span> <span class="st">'grey'</span>, </span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>        <span class="bu">format</span> <span class="op">=</span> <span class="st">'%Y'</span>),</span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>    y<span class="op">=</span> alt.Y(<span class="st">'Consumption per Person'</span>).scale(domain<span class="op">=</span>(<span class="dv">30</span>, <span class="dv">80</span>)).axis(</span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>        title <span class="op">=</span><span class="st">'Consumption per Person in kg'</span>,</span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a>        titleColor<span class="op">=</span> <span class="st">'grey'</span>,</span>
+<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a>        titleAnchor<span class="op">=</span><span class="st">'end'</span>, </span>
+<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a>        grid <span class="op">=</span> <span class="va">False</span>, </span>
+<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a>        tickColor<span class="op">=</span> <span class="st">'grey'</span>, </span>
+<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a>    ),</span>
+<span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a>    strokeWidth <span class="op">=</span> alt.value(<span class="dv">2</span>)</span>
+<span id="cb3-24"><a href="#cb3-24" aria-hidden="true" tabindex="-1"></a>).properties(</span>
+<span id="cb3-25"><a href="#cb3-25" aria-hidden="true" tabindex="-1"></a>    width <span class="op">=</span> <span class="dv">550</span>,</span>
+<span id="cb3-26"><a href="#cb3-26" aria-hidden="true" tabindex="-1"></a>    height <span class="op">=</span> <span class="dv">350</span></span>
+<span id="cb3-27"><a href="#cb3-27" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ol start="7" type="1">
+<li>To focus the attention: creating 2 points and a dotted line for the min and max consumption values and an area to visualize the decline of meat consumption</li>
+</ol>
+<p><img src="images/visualization(7).svg" class="img-fluid" style="width:60.0%"></p>
+<ol start="8" type="1">
+<li>In Quarto presentation: To implement the Data Storytelling Principles, I slowly built the chart up (frist sceleton chart, then line graph, first point at max value and label, second point at min point and label, area and label) Element which were not relevant for the current side got a grey color.</li>
+</ol>
+<p><strong>Final Chart(s):</strong></p>
+<p><img src="images/visualization(9).svg" class="img-fluid" style="width:100.0%"></p>
+<p><img src="images/visualization(8).svg" class="img-fluid" style="width:100.0%"></p>
+<p><img src="images/visualization(10).svg" class="img-fluid" style="width:100.0%"></p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
